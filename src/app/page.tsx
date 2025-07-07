@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import { aboutImage } from "@/lib/images"
+import Image from "next/image"
 import { 
   Github, 
   Linkedin, 
@@ -8,7 +9,6 @@ import {
   MapPin, 
   Code, 
   Briefcase, 
-  User,
   ArrowRight,
   ExternalLink
 } from "lucide-react"
@@ -24,19 +24,21 @@ export default function Page() {
             <div className="mb-8">
                                             <div className="mx-auto h-32 w-32 rounded-full bg-gradient-to-r from-emerald-500 to-amber-600 p-1">
                 <div className="h-full w-full rounded-full bg-white dark:bg-slate-900 flex items-center justify-center overflow-hidden">
-                    <img 
+                    <Image 
                       src="https://avatars.githubusercontent.com/u/23535069?s=400&u=ed0e31170a0e28d219a091b50ca7db8d591f24e4&v=4" 
-                      alt="Owen's GitHub avatar" 
+                      alt="Owen&apos;s GitHub avatar" 
+                      width={128}
+                      height={128}
                       className="h-full w-full rounded-full object-cover"
                     />
                   </div>
                 </div>
             </div>
             <h1 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-6xl">
-              Hey, I'm <span className="text-emerald-600">Owen</span>
+              Hey, I&apos;m <span className="text-emerald-600">Owen</span>
             </h1>
             <p className="mt-6 text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
-              I'm an engineer from NJ in the NYC area. Psyched to be building at {" "}
+              I&apos;m an engineer from NJ in the NYC area. Psyched to be building at {" "}
                              <a 
                  href="https://titan.com" 
                  target="_blank" 
@@ -82,7 +84,7 @@ export default function Page() {
                 About Me
               </h2>
               <p className="text-lg text-slate-600 dark:text-slate-300 mb-6">
-                I'm an engineer working in New York City, originally from New Jersey. Completed my BS/MS in Computer Science at Rochester Institute of Technology.
+                I&apos;m an engineer working in New York City, originally from New Jersey. Completed my BS/MS in Computer Science at Rochester Institute of Technology.
               </p>
               <p className="text-lg text-slate-600 dark:text-slate-300 mb-8">
                 Enjoying life with my wife and cats in New Jersey. Trying to spend time in the woods, by the water, and with my friends.
@@ -94,9 +96,11 @@ export default function Page() {
             </div>
             <div className="bg-gradient-to-br from-emerald-500/20 to-amber-500/20 rounded-2xl p-8">
               <div className="aspect-video bg-white/50 dark:bg-slate-800/50 rounded-xl overflow-hidden">
-                <img 
+                <Image 
                   src={aboutImage} 
                   alt="New Jersey" 
+                  width={800}
+                  height={450}
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -148,7 +152,7 @@ export default function Page() {
               Featured Projects
             </h2>
             <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-              Here are some of the projects I've worked on recently.
+              Here are some of the projects I&apos;ve worked on recently.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -194,10 +198,10 @@ export default function Page() {
       <section id="contact" className="py-24 bg-amber-50/50 dark:bg-slate-800/50">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">
-            Let's Connect
+            Let&apos;s Connect
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-300 mb-8">
-            I'm always interested in learning about what people are up to.
+            I&apos;m always interested in learning about what people are up to.
           </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="outline" asChild>

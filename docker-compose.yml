@@ -1,11 +1,9 @@
-version: '3.8'
-
 services:
   multiojuice-website:
     build:
       context: .
       dockerfile: Dockerfile
-    pull_policy: build 
+    pull_policy: build
     container_name: multiojuice-website
     ports:
       - "3000:3000"
