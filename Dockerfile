@@ -41,6 +41,7 @@ EXPOSE 3000
 # Set environment variable
 ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
+ENV NEXT_PUBLIC_SITE_URL=https://multiojuice.com
 
 # Start the application
 CMD ["node", "server.js"] 
